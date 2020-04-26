@@ -21,7 +21,7 @@ TEST(PracticeTest, is_simple_palindrome)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_simple_palindrome)
+TEST(PracticeTest, special_char_brackets)
 {
     Practice obj;
     bool actual = obj.isPalindrome("{]");
