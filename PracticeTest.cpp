@@ -47,3 +47,15 @@ TEST(PracticeTest, special_chars_pal)
     bool actual = obj.isPalindrome(".!@#$%^^%$#@!.");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, sort_happy)
+{
+  int x, y, z;
+  x = 3;
+  y = 2;
+  z = 1;
+  sortDescending(x,y,z);
+  ASSERT_GE(x,y);
+  ASSERT_GE(y,z);
+
+}
