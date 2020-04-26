@@ -50,11 +50,12 @@ TEST(PracticeTest, special_chars_pal)
 
 TEST(PracticeTest, sort_happy)
 {
+  Practice obj;
   int x, y, z;
   x = 3;
   y = 2;
   z = 1;
-  sortDescending(x,y,z);
+  obj.sortDescending(x,y,z);
   ASSERT_GE(x,y);
   ASSERT_GE(y,z);
 
