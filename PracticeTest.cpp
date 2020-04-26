@@ -34,10 +34,10 @@ TEST(PracticeTest, uppercase_pal)
     bool actual = obj.isPalindrome("ABBA");
     ASSERT_TRUE(actual);
 }
-TEST(PracticeTest, uppercase_pal)
+TEST(PracticeTest, mixed_case_pal)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("ABBA");
+    bool actual = obj.isPalindrome("AbBa");
     ASSERT_TRUE(actual);
 }
 
