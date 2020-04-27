@@ -101,7 +101,66 @@ TEST(PracticeTest, sort_outside)
   ASSERT_GE(y,z);
 
 }
+//negatives
+TEST(PracticeTest, sort_happy_neg)
+{
+  Practice obj;
+  int x, y, z;
+  x = -3;
+  y = -2;
+  z = -1;
+  obj.sortDescending(x,y,z);
+  ASSERT_GE(x,y);
+  ASSERT_GE(y,z);
 
+}
+TEST(PracticeTest, sort_middle_right_neg)
+{
+  Practice obj;
+  int x, y, z;
+  x = -3;
+  y = -1;
+  z = -2;
+  obj.sortDescending(x,y,z);
+  ASSERT_GE(x,y);
+  ASSERT_GE(y,z);
 
+}
+TEST(PracticeTest, sort_middle_left_neg)
+{
+  Practice obj;
+  int x, y, z;
+  x = -2;
+  y = -3;
+  z = -1;
+  obj.sortDescending(x,y,z);
+  ASSERT_GE(x,y);
+  ASSERT_GE(y,z);
+
+}
+TEST(PracticeTest, sort_outside_neg)
+{
+  Practice obj;
+  int x, y, z;
+  x = -1;
+  y = -2;
+  z = -3;
+  obj.sortDescending(x,y,z);
+  ASSERT_GE(x,y);
+  ASSERT_GE(y,z);
+
+}
+TEST(PracticeTest, sort_mixed)
+{
+  Practice obj;
+  int x, y, z;
+  x = -1;     
+  y = -2;
+  z = 3;
+  obj.sortDescending(x,y,z);
+  ASSERT_GE(x,y);
+  ASSERT_GE(y,z);
+
+}
 
 
