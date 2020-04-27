@@ -27,7 +27,12 @@ TEST(PracticeTest, special_char_brackets)
     bool actual = obj.isPalindrome("{]");
     ASSERT_FALSE(actual);
 }
-
+TEST(PracticeTest, double_pal)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("racecarracecaR");
+    ASSERT_TRUE(actual);
+}
 TEST(PracticeTest, uppercase_pal)
 {
     Practice obj;
