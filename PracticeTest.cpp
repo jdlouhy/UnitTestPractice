@@ -40,7 +40,12 @@ TEST(PracticeTest, mixed_case_pal)
     bool actual = obj.isPalindrome("AbBa");
     ASSERT_TRUE(actual);
 }
-
+TEST(PracticeTest, mixed_case_notpal)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("^AA^^")
+    ASSERT_FALSE(actual);
+}
 TEST(PracticeTest, special_chars_pal)
 {
     Practice obj;
