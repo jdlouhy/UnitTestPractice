@@ -19,6 +19,7 @@ void Practice::sortDescending(int & first, int & second, int & third)
     second = third;
     third = temp;
   }
+//This case was removed, it was found to be unreachable code via coverage.io
 /*  if( first < third )
   {
     int temp = first;
