@@ -13,27 +13,26 @@ void Practice::sortDescending(int & first, int & second, int & third)
     first = second;
     second = temp;
   }
-  if( second < third )
-  {
-    int temp = second;
-    second = third;
-    third = temp;
-  }
-//This case was removed, it was found to be unreachable code via coverage.io
-/*  if( first < third )
+if( first < third )
   {
     int temp = first;
     first = third;
     third = temp;
   }
-*/
-  //added for bug fix
-  if( first < second )
+if( second < third )
+  {
+    int temp = second;
+    second = third;
+    third = temp;
+  }
+/* unreachable code commented out
+if( first < second )
   {
     int temp = first;
     first = second;
     second = temp;
   }
+  */
 }
 
 // Receive a string and return whether or not it is strictly a palindrome,
